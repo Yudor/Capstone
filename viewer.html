@@ -22,7 +22,8 @@
 
         // Load glb 파일
         var loader = new THREE.GLTFLoader();
-        loader.load('path/to/your/model.gltf', function (gltf) {
+        // 모델의 URL을 설정
+        loader.load('https://github.com/Yudor/Yudor.github.io/raw/main/Documents/edited%20modeling.glb', function (gltf) {
             var model = gltf.scene;
             scene.add(model);
         });
