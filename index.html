@@ -8,4 +8,9 @@
 <body>
   <model-viewer src="https://github.com/Yudor/Yudor.github.io/blob/main/Documents/edited%20modeling.glb" alt="A 3D model" ar ar-modes="webxr scene-viewer quick-look" camera-controls></model-viewer>
 </body>
+  try {
+        const response = await fetch(url);
+        if (!response.ok) throw new Error('Request faild');
+        return await response.json();
+    } catch (err)
 </html>
