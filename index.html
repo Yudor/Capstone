@@ -1,16 +1,5 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <title>GLB Embedding Example</title>
-  <script src="https://cdn.jsdelivr.net/npm/@google/model-viewer@2.4.0/dist/model-viewer.min.js"></script>
-</head>
-<body>
-  <model-viewer src="https://github.com/Yudor/Yudor.github.io/blob/main/Documents/edited%20modeling.glb" alt="A 3D model" ar ar-modes="webxr scene-viewer quick-look" camera-controls></model-viewer>
-</body>
-  try {
-        const response = await fetch(url);
-        if (!response.ok) throw new Error('Request faild');
-        return await response.json();
-    } catch (err)
-</html>
+<!-- Import the component -->
+<script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.3.0/model-viewer.min.js"></script>
+
+<!-- Use it like any other HTML element -->
+<model-viewer alt="Neil Armstrong's Spacesuit from the Smithsonian Digitization Programs Office and National Air and Space Museum" src="shared-assets/models/NeilArmstrong.glb" ar environment-image="shared-assets/environments/moon_1k.hdr" poster="shared-assets/models/NeilArmstrong.webp" shadow-intensity="1" camera-controls touch-action="pan-y"></model-viewer>
