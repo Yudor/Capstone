@@ -1,39 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>3D Model Viewer</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="x-ua-compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+  <title>My GLB Model</title>
 </head>
 <body>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-    
-    <script>
-        // Scene 생성
-        var scene = new THREE.Scene();
-
-        // Camera 생성
-        var camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
-        camera.position.z = 5;
-
-        // Renderer 생성
-        var renderer = new THREE.WebGLRenderer();
-        renderer.setSize(window.innerWidth, window.innerHeight);
-        document.body.appendChild(renderer.domElement);
-
-        // Load glb 파일
-        var loader = new THREE.GLTFLoaderLegacy();
-        // 모델의 URL을 raw 경로로 설정
-        loader.load('https://raw.githubusercontent.com/Yudor/Yudor.github.io/main/Documents/edited%20modeling.glb', function (gltf) {
-            var model = gltf.scene;
-            scene.add(model);
-        });
-
-        // 렌더링 루프 설정
-        var animate = function () {
-            requestAnimationFrame(animate);
-            renderer.render(scene, camera);
-        };
-
-        animate();
-    </script>
+  <model-viewer camera-controls alt="My GLB Model" src="https://github.com/Yudor/Yudor.github.io/blob/main/Documents/edited%20modeling.glb"></model-viewer>
 </body>
 </html>
