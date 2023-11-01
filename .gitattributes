@@ -6,3 +6,4 @@ D:/학교/23년도[[:space:]]2학기/캡스톤디자인/glb_files filter=lfs dif
 c:/documents/modeling.glb filter=lfs diff=lfs merge=lfs -text
 c:/documents/modeling.glb filter=lfs diff=lfs merge=lfs -text
 c:/documents/modeling.glb filter=lfs diff=lfs merge=lfs -text
+modeling.glb filter=lfs diff=lfs merge=lfs -text
